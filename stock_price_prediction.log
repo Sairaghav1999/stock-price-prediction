@@ -1,0 +1,1051 @@
+2019-01-18 04:23:42,542 - stock_price_prediction - INFO - stockpriceprediction - ------------------Started Stock Price Prediction-----------------
+2019-01-18 04:24:43,514 - stock_price_prediction - INFO - stockpriceprediction - ------------------Started Stock Price Prediction-----------------
+2019-01-18 04:24:43,526 - stock_price_prediction - INFO - getdata - ----------------Getting stock data from Quandl----------------
+2019-01-18 04:24:43,526 - stock_price_prediction - INFO - getdata - Stock ticker list = ['WIKI/AAPL', 'WIKI/AMGN', 'WIKI/AMZN', 'WIKI/CVX', 'WIKI/F', 'WIKI/FB', 'WIKI/GOOGL', 'WIKI/JNJ', 'WIKI/MSFT', 'WIKI/XOM', 'BCB/7809', 'NASDAQOMX/COMP']
+2019-01-18 04:24:43,526 - stock_price_prediction - INFO - getdata - Reading stock data from stockdata/stockdata.csv
+2019-01-18 04:24:44,337 - stock_price_prediction - DEBUG - getdata - df.shape = (12356, 127)
+2019-01-18 04:24:44,338 - stock_price_prediction - DEBUG - getdata - Getting stock ticker list
+2019-01-18 04:24:44,338 - stock_price_prediction - INFO - preprocessing - ----------------Pre-processing data----------------
+2019-01-18 04:24:44,396 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/AAPL = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-01-18 04:24:44,552 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/AMGN = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-01-18 04:24:44,664 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/AMZN = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-01-18 04:24:44,752 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/CVX = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-01-18 04:24:44,844 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/F = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-01-18 04:24:44,946 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/FB = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-01-18 04:24:45,062 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/GOOGL = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-01-18 04:24:45,162 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/JNJ = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-01-18 04:24:45,282 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/MSFT = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-01-18 04:24:45,430 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/XOM = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-01-18 04:24:45,554 - stock_price_prediction - DEBUG - preprocessing - Feature list for BCB/7809 = ['Value']
+2019-01-18 04:24:45,606 - stock_price_prediction - DEBUG - preprocessing - Feature list for NASDAQOMX/COMP = ['Index Value']
+2019-01-18 04:24:45,662 - stock_price_prediction - INFO - buildmodels - ----------------Building model using Linear Regression----------------
+2019-01-18 04:24:45,662 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 04:24:45,666 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.34064487826278
+2019-01-18 04:24:45,746 - stock_price_prediction - INFO - buildmodels - Saving Linear Regression model for WIKI_AAPL to pickle file
+2019-01-18 04:24:45,762 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_AAPL_Learning Curves
+2019-01-18 04:24:47,903 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_AAPL = 0.7039547958011347
+2019-01-18 04:24:47,903 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_AAPL = [-3.21250277  0.03451818  0.29194846  0.70843746  0.7039548 ]
+2019-01-18 04:24:47,903 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_AAPL = -0.29472877384831475 +/- 2.9623923056190873
+2019-01-18 04:24:47,903 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.007944583892822266s
+2019-01-18 04:24:47,907 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 04:24:47,907 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.3353651103255
+2019-01-18 04:24:47,935 - stock_price_prediction - INFO - buildmodels - Saving Linear Regression model for WIKI_AMGN to pickle file
+2019-01-18 04:24:47,943 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_AMGN_Learning Curves
+2019-01-18 04:24:48,983 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_AMGN = 0.8211797436066919
+2019-01-18 04:24:48,987 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_AMGN = [ 0.4989184   0.87106367 -0.21884688 -0.28323055  0.82117974]
+2019-01-18 04:24:48,987 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_AMGN = 0.33781687832060603 +/- 0.9957991528688114
+2019-01-18 04:24:48,987 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0040204524993896484s
+2019-01-18 04:24:48,987 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 04:24:48,987 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33660837099626
+2019-01-18 04:24:49,011 - stock_price_prediction - INFO - buildmodels - Saving Linear Regression model for WIKI_AMZN to pickle file
+2019-01-18 04:24:49,019 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_AMZN_Learning Curves
+2019-01-18 04:24:49,942 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_AMZN = 0.8960802235780481
+2019-01-18 04:24:49,942 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_AMZN = [0.75892723 0.35704917 0.48922798 0.72123179 0.89608022]
+2019-01-18 04:24:49,942 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_AMZN = 0.6445032791787615 +/- 0.3888561144417283
+2019-01-18 04:24:49,942 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-01-18 04:24:49,942 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 04:24:49,946 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-01-18 04:24:49,982 - stock_price_prediction - INFO - buildmodels - Saving Linear Regression model for WIKI_CVX to pickle file
+2019-01-18 04:24:49,990 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_CVX_Learning Curves
+2019-01-18 04:24:51,110 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_CVX = 0.676268795162017
+2019-01-18 04:24:51,110 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_CVX = [0.27727145 0.47981963 0.71734428 0.82671176 0.6762688 ]
+2019-01-18 04:24:51,110 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_CVX = 0.5954831837893336 +/- 0.3893377592117544
+2019-01-18 04:24:51,110 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.008003473281860352s
+2019-01-18 04:24:51,110 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 04:24:51,114 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-01-18 04:24:51,174 - stock_price_prediction - INFO - buildmodels - Saving Linear Regression model for WIKI_F to pickle file
+2019-01-18 04:24:51,194 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_F_Learning Curves
+2019-01-18 04:24:52,418 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_F = -0.1255683680449482
+2019-01-18 04:24:52,418 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_F = [ 0.47679238 -0.5044652   0.70969814  0.01753703 -0.12556837]
+2019-01-18 04:24:52,418 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_F = 0.11479879745621717 +/- 0.8651791538969215
+2019-01-18 04:24:52,418 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.00800013542175293s
+2019-01-18 04:24:52,418 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 04:24:52,422 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.3917309039944
+2019-01-18 04:24:52,474 - stock_price_prediction - INFO - buildmodels - Saving Linear Regression model for WIKI_FB to pickle file
+2019-01-18 04:24:52,482 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_FB_Learning Curves
+2019-01-18 04:24:53,494 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_FB = 0.87777869303608
+2019-01-18 04:24:53,494 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_FB = [0.17714819 0.72448825 0.64709468 0.40752319 0.87777869]
+2019-01-18 04:24:53,494 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_FB = 0.5668065992629743 +/- 0.4941402271387793
+2019-01-18 04:24:53,494 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.011998414993286133s
+2019-01-18 04:24:53,494 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 04:24:53,494 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33835492618259
+2019-01-18 04:24:53,522 - stock_price_prediction - INFO - buildmodels - Saving Linear Regression model for WIKI_GOOGL to pickle file
+2019-01-18 04:24:53,530 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_GOOGL_Learning Curves
+2019-01-18 04:24:54,458 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_GOOGL = 0.6933539556052517
+2019-01-18 04:24:54,462 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_GOOGL = [0.44736475 0.60554779 0.58253314 0.00814283 0.69335396]
+2019-01-18 04:24:54,462 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_GOOGL = 0.46738849278948624 +/- 0.48556293063488815
+2019-01-18 04:24:54,462 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-01-18 04:24:54,462 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 04:24:54,462 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-01-18 04:24:54,494 - stock_price_prediction - INFO - buildmodels - Saving Linear Regression model for WIKI_JNJ to pickle file
+2019-01-18 04:24:54,502 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_JNJ_Learning Curves
+2019-01-18 04:24:55,902 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_JNJ = 0.908690964689382
+2019-01-18 04:24:55,902 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_JNJ = [0.35744444 0.75358067 0.8987486  0.11986838 0.90869096]
+2019-01-18 04:24:55,906 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_JNJ = 0.6076666122851192 +/- 0.6306780766243042
+2019-01-18 04:24:55,906 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.004000663757324219s
+2019-01-18 04:24:55,906 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 04:24:55,910 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.3397165836844
+2019-01-18 04:24:55,994 - stock_price_prediction - INFO - buildmodels - Saving Linear Regression model for WIKI_MSFT to pickle file
+2019-01-18 04:24:56,014 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_MSFT_Learning Curves
+2019-01-18 04:24:57,021 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_MSFT = 0.8601107199999605
+2019-01-18 04:24:57,021 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_MSFT = [ 0.92045766  0.56492308 -0.28179467  0.05000481  0.86011072]
+2019-01-18 04:24:57,021 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_MSFT = 0.4227403206952829 +/- 0.9357489712399221
+2019-01-18 04:24:57,021 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-01-18 04:24:57,025 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 04:24:57,025 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-01-18 04:24:57,057 - stock_price_prediction - INFO - buildmodels - Saving Linear Regression model for WIKI_XOM to pickle file
+2019-01-18 04:24:57,073 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_XOM_Learning Curves
+2019-01-18 04:24:58,029 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_XOM = 0.6063453582713212
+2019-01-18 04:24:58,029 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_XOM = [0.4090367  0.84194246 0.95133792 0.88227942 0.60634536]
+2019-01-18 04:24:58,029 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_XOM = 0.7381883693579209 +/- 0.40267433129824937
+2019-01-18 04:24:58,029 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.003999948501586914s
+2019-01-18 04:24:58,029 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 04:24:58,029 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.35139822241491
+2019-01-18 04:24:58,061 - stock_price_prediction - INFO - buildmodels - Saving Linear Regression model for BCB_7809 to pickle file
+2019-01-18 04:24:58,073 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_BCB_7809_Learning Curves
+2019-01-18 04:24:59,276 - stock_price_prediction - INFO - buildmodels - Training score for BCB_7809 = 0.8693909896283103
+2019-01-18 04:24:59,277 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for BCB_7809 = [0.41637976 0.70816283 0.67113519 0.68988913 0.86939099]
+2019-01-18 04:24:59,277 - stock_price_prediction - INFO - buildmodels - Cross validation score for BCB_7809 = 0.6709915802907472 +/- 0.29110595246435467
+2019-01-18 04:24:59,278 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0059969425201416016s
+2019-01-18 04:24:59,278 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 04:24:59,279 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.35051546391753
+2019-01-18 04:24:59,319 - stock_price_prediction - INFO - buildmodels - Saving Linear Regression model for NASDAQOMX_COMP to pickle file
+2019-01-18 04:24:59,354 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_NASDAQOMX_COMP_Learning Curves
+2019-01-18 04:25:00,393 - stock_price_prediction - INFO - buildmodels - Training score for NASDAQOMX_COMP = 0.9187555669484297
+2019-01-18 04:25:00,393 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for NASDAQOMX_COMP = [0.16363237 0.53860363 0.13550395 0.65327415 0.91875557]
+2019-01-18 04:25:00,393 - stock_price_prediction - INFO - buildmodels - Cross validation score for NASDAQOMX_COMP = 0.4819539316588732 +/- 0.5964640350744127
+2019-01-18 04:25:00,393 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-01-18 04:25:00,393 - stock_price_prediction - INFO - buildmodels - ----------------Building model using Decision Tree Regressor----------------
+2019-01-18 04:25:00,393 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 04:25:00,397 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.34064487826278
+2019-01-18 04:25:00,613 - stock_price_prediction - INFO - buildmodels - Saving Decision Tree Regressor model for WIKI_AAPL to pickle file
+2019-01-18 04:25:00,625 - stock_price_prediction - INFO - buildmodels - Plotting Decision Tree Regressor_WIKI_AAPL_Learning Curves
+2019-01-18 04:25:02,111 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_AAPL = -2.704066435541008
+2019-01-18 04:25:02,111 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_AAPL = [-15.24698493  -1.49703018  -0.13622762  -1.87138701  -2.68030926]
+2019-01-18 04:25:02,111 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_AAPL = -4.286387797574579 +/- 11.083347943870537
+2019-01-18 04:25:02,111 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-01-18 04:25:02,111 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 04:25:02,115 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.3353651103255
+2019-01-18 04:25:02,275 - stock_price_prediction - INFO - buildmodels - Saving Decision Tree Regressor model for WIKI_AMGN to pickle file
+2019-01-18 04:25:02,303 - stock_price_prediction - INFO - buildmodels - Plotting Decision Tree Regressor_WIKI_AMGN_Learning Curves
+2019-01-18 04:25:03,923 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_AMGN = -3.3830066148033797
+2019-01-18 04:25:03,927 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_AMGN = [-4.30422624 -0.79844177 -0.62018916 -1.23161707 -3.39390798]
+2019-01-18 04:25:03,927 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_AMGN = -2.069676443471516 +/- 2.9888053040774505
+2019-01-18 04:25:03,927 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.012000083923339844s
+2019-01-18 04:25:03,927 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 04:25:03,927 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33660837099626
+2019-01-18 04:25:04,035 - stock_price_prediction - INFO - buildmodels - Saving Decision Tree Regressor model for WIKI_AMZN to pickle file
+2019-01-18 04:25:04,049 - stock_price_prediction - INFO - buildmodels - Plotting Decision Tree Regressor_WIKI_AMZN_Learning Curves
+2019-01-18 04:25:05,131 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_AMZN = -1.7130311767689377
+2019-01-18 04:25:05,131 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_AMZN = [-3.36036599 -0.42439954 -0.70505279 -1.19009528 -1.73499641]
+2019-01-18 04:25:05,131 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_AMZN = -1.4829820012101147 +/- 2.078390768881004
+2019-01-18 04:25:05,135 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-01-18 04:25:05,135 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 04:25:05,135 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-01-18 04:25:05,355 - stock_price_prediction - INFO - buildmodels - Saving Decision Tree Regressor model for WIKI_CVX to pickle file
+2019-01-18 04:25:05,371 - stock_price_prediction - INFO - buildmodels - Plotting Decision Tree Regressor_WIKI_CVX_Learning Curves
+2019-01-18 04:25:07,574 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_CVX = -3.058549023763975
+2019-01-18 04:25:07,574 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_CVX = [ 0.12754942 -1.17448145 -2.66238515 -1.12309519 -3.04166099]
+2019-01-18 04:25:07,574 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_CVX = -1.5748146730404449 +/- 2.2972693942279943
+2019-01-18 04:25:07,578 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.01199960708618164s
+2019-01-18 04:25:07,578 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 04:25:07,578 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-01-18 04:25:07,806 - stock_price_prediction - INFO - buildmodels - Saving Decision Tree Regressor model for WIKI_F to pickle file
+2019-01-18 04:25:07,842 - stock_price_prediction - INFO - buildmodels - Plotting Decision Tree Regressor_WIKI_F_Learning Curves
+2019-01-18 04:25:09,723 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_F = -1.5755235412094213
+2019-01-18 04:25:09,723 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_F = [-0.16231275  0.01804959 -1.69589407 -1.43331852 -1.366168  ]
+2019-01-18 04:25:09,723 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_F = -0.9279287490376131 +/- 1.4193762199004416
+2019-01-18 04:25:09,723 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.004001140594482422s
+2019-01-18 04:25:09,723 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 04:25:09,723 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.3917309039944
+2019-01-18 04:25:09,751 - stock_price_prediction - INFO - buildmodels - Saving Decision Tree Regressor model for WIKI_FB to pickle file
+2019-01-18 04:25:09,763 - stock_price_prediction - INFO - buildmodels - Plotting Decision Tree Regressor_WIKI_FB_Learning Curves
+2019-01-18 04:25:10,519 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_FB = -5.996292030625763
+2019-01-18 04:25:10,519 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_FB = [-2.06018408 -2.90638695 -1.76119478 -9.83072692 -5.80898088]
+2019-01-18 04:25:10,519 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_FB = -4.47349472139266 +/- 6.074202897864674
+2019-01-18 04:25:10,519 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-01-18 04:25:10,519 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 04:25:10,523 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33835492618259
+2019-01-18 04:25:10,651 - stock_price_prediction - INFO - buildmodels - Saving Decision Tree Regressor model for WIKI_GOOGL to pickle file
+2019-01-18 04:25:10,663 - stock_price_prediction - INFO - buildmodels - Plotting Decision Tree Regressor_WIKI_GOOGL_Learning Curves
+2019-01-18 04:25:11,674 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_GOOGL = -3.1534500259798266
+2019-01-18 04:25:11,674 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_GOOGL = [-0.24519523 -0.5524256  -1.4025881  -3.69488156 -3.10475037]
+2019-01-18 04:25:11,674 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_GOOGL = -1.7999681722215393 +/- 2.7458689941895384
+2019-01-18 04:25:11,674 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.003993988037109375s
+2019-01-18 04:25:11,674 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 04:25:11,678 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-01-18 04:25:11,914 - stock_price_prediction - INFO - buildmodels - Saving Decision Tree Regressor model for WIKI_JNJ to pickle file
+2019-01-18 04:25:11,926 - stock_price_prediction - INFO - buildmodels - Plotting Decision Tree Regressor_WIKI_JNJ_Learning Curves
+2019-01-18 04:25:13,850 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_JNJ = -2.381338445830531
+2019-01-18 04:25:13,854 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_JNJ = [ 0.25538967 -2.25500732 -2.21128149 -3.04361063 -2.38346507]
+2019-01-18 04:25:13,854 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_JNJ = -1.927594967435677 +/- 2.2638740773943318
+2019-01-18 04:25:13,854 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.003998279571533203s
+2019-01-18 04:25:13,854 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 04:25:13,854 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.3397165836844
+2019-01-18 04:25:14,038 - stock_price_prediction - INFO - buildmodels - Saving Decision Tree Regressor model for WIKI_MSFT to pickle file
+2019-01-18 04:25:14,053 - stock_price_prediction - INFO - buildmodels - Plotting Decision Tree Regressor_WIKI_MSFT_Learning Curves
+2019-01-18 04:25:15,537 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_MSFT = -1.9246947692064942
+2019-01-18 04:25:15,537 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_MSFT = [-1.70498209 -3.41293801 -4.86728753 -1.59221461 -1.92013404]
+2019-01-18 04:25:15,537 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_MSFT = -2.6995112560879164 +/- 2.534695986039412
+2019-01-18 04:25:15,537 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.007997274398803711s
+2019-01-18 04:25:15,537 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 04:25:15,541 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-01-18 04:25:15,769 - stock_price_prediction - INFO - buildmodels - Saving Decision Tree Regressor model for WIKI_XOM to pickle file
+2019-01-18 04:25:15,837 - stock_price_prediction - INFO - buildmodels - Plotting Decision Tree Regressor_WIKI_XOM_Learning Curves
+2019-01-18 04:25:17,859 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_XOM = -0.48923232104632164
+2019-01-18 04:25:17,859 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_XOM = [-1.17407817 -3.03791396 -1.65644297 -1.08757653 -0.49465714]
+2019-01-18 04:25:17,859 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_XOM = -1.4901337523083487 +/- 1.7149226103439537
+2019-01-18 04:25:17,859 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-01-18 04:25:17,863 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 04:25:17,863 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.35139822241491
+2019-01-18 04:25:17,915 - stock_price_prediction - INFO - buildmodels - Saving Decision Tree Regressor model for BCB_7809 to pickle file
+2019-01-18 04:25:17,923 - stock_price_prediction - INFO - buildmodels - Plotting Decision Tree Regressor_BCB_7809_Learning Curves
+2019-01-18 04:25:18,995 - stock_price_prediction - INFO - buildmodels - Training score for BCB_7809 = -0.5180173152592302
+2019-01-18 04:25:18,995 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for BCB_7809 = [-0.75580199  0.28025178  0.22728632 -2.21983225 -0.51801732]
+2019-01-18 04:25:18,995 - stock_price_prediction - INFO - buildmodels - Cross validation score for BCB_7809 = -0.5972226911690794 +/- 1.8141795340821378
+2019-01-18 04:25:18,995 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.003998756408691406s
+2019-01-18 04:25:18,995 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 04:25:18,995 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.35051546391753
+2019-01-18 04:25:19,031 - stock_price_prediction - INFO - buildmodels - Saving Decision Tree Regressor model for NASDAQOMX_COMP to pickle file
+2019-01-18 04:25:19,039 - stock_price_prediction - INFO - buildmodels - Plotting Decision Tree Regressor_NASDAQOMX_COMP_Learning Curves
+2019-01-18 04:25:20,048 - stock_price_prediction - INFO - buildmodels - Training score for NASDAQOMX_COMP = -1.4670775907017282
+2019-01-18 04:25:20,048 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for NASDAQOMX_COMP = [-2.0386202   0.39808156 -1.35515515 -5.2848538  -1.46707759]
+2019-01-18 04:25:20,048 - stock_price_prediction - INFO - buildmodels - Cross validation score for NASDAQOMX_COMP = -1.94952503580787 +/- 3.712642591523922
+2019-01-18 04:25:20,048 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.003998994827270508s
+2019-01-18 04:25:20,048 - stock_price_prediction - INFO - buildmodels - ----------------Building model using Random Forest Regressor----------------
+2019-01-18 04:25:20,052 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 04:25:20,052 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.34064487826278
+2019-01-18 04:25:32,494 - stock_price_prediction - INFO - buildmodels - Saving Random Forest Regressor model for WIKI_AAPL to pickle file
+2019-01-18 04:25:33,455 - stock_price_prediction - INFO - buildmodels - Plotting Random Forest Regressor_WIKI_AAPL_Learning Curves
+2019-01-18 04:26:45,706 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_AAPL = -2.7673264793819357
+2019-01-18 04:26:45,706 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_AAPL = [-14.55211228  -0.45863537  -0.15216401  -1.83750876  -2.76106152]
+2019-01-18 04:26:45,710 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_AAPL = -3.9522963904443005 +/- 10.766397261775504
+2019-01-18 04:26:45,710 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.13997507095336914s
+2019-01-18 04:26:45,710 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 04:26:45,710 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.3353651103255
+2019-01-18 04:26:55,698 - stock_price_prediction - INFO - buildmodels - Saving Random Forest Regressor model for WIKI_AMGN to pickle file
+2019-01-18 04:26:56,462 - stock_price_prediction - INFO - buildmodels - Plotting Random Forest Regressor_WIKI_AMGN_Learning Curves
+2019-01-18 10:24:01,358 - stock_price_prediction - INFO - stockpriceprediction - ------------------Started Stock Price Prediction-----------------
+2019-01-18 10:24:09,148 - stock_price_prediction - INFO - stockpriceprediction - ------------------Started Stock Price Prediction-----------------
+2019-01-18 10:24:09,152 - stock_price_prediction - INFO - getdata - ----------------Getting stock data from Quandl----------------
+2019-01-18 10:24:09,152 - stock_price_prediction - INFO - getdata - Stock ticker list = ['WIKI/AAPL', 'WIKI/AMGN', 'WIKI/AMZN', 'WIKI/CVX', 'WIKI/F', 'WIKI/FB', 'WIKI/GOOGL', 'WIKI/JNJ', 'WIKI/MSFT', 'WIKI/XOM', 'BCB/7809', 'NASDAQOMX/COMP']
+2019-01-18 10:24:09,152 - stock_price_prediction - INFO - getdata - Reading stock data from stockdata/stockdata.csv
+2019-01-18 10:24:09,696 - stock_price_prediction - DEBUG - getdata - df.shape = (12356, 127)
+2019-01-18 10:24:09,696 - stock_price_prediction - DEBUG - getdata - Getting stock ticker list
+2019-01-18 10:24:09,696 - stock_price_prediction - INFO - preprocessing - ----------------Pre-processing data----------------
+2019-01-18 10:24:09,760 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/AAPL = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-01-18 10:24:09,856 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/AMGN = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-01-18 10:24:09,936 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/AMZN = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-01-18 10:24:10,016 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/CVX = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-01-18 10:24:10,100 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/F = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-01-18 10:24:10,180 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/FB = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-01-18 10:24:10,256 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/GOOGL = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-01-18 10:24:10,328 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/JNJ = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-01-18 10:24:10,404 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/MSFT = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-01-18 10:24:10,480 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/XOM = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-01-18 10:24:10,556 - stock_price_prediction - DEBUG - preprocessing - Feature list for BCB/7809 = ['Value']
+2019-01-18 10:24:10,592 - stock_price_prediction - DEBUG - preprocessing - Feature list for NASDAQOMX/COMP = ['Index Value']
+2019-01-18 10:24:10,632 - stock_price_prediction - INFO - buildmodels - ----------------Building model using Linear Regression----------------
+2019-01-18 10:24:10,632 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_AAPL from pickle file
+2019-01-18 10:24:10,632 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.34064487826278
+2019-01-18 10:24:10,636 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_AAPL_Learning Curves
+2019-01-18 10:24:11,746 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_AAPL = 0.7039547958011347
+2019-01-18 10:24:11,746 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_AAPL = [-3.21250277  0.03451818  0.29194846  0.70843746  0.7039548 ]
+2019-01-18 10:24:11,746 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_AAPL = -0.29472877384831475 +/- 2.9623923056190873
+2019-01-18 10:24:11,746 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0039937496185302734s
+2019-01-18 10:24:11,746 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_AMGN from pickle file
+2019-01-18 10:24:11,746 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.3353651103255
+2019-01-18 10:24:11,750 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_AMGN_Learning Curves
+2019-01-18 10:24:12,734 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_AMGN = 0.8211797436066919
+2019-01-18 10:24:12,738 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_AMGN = [ 0.4989184   0.87106367 -0.21884688 -0.28323055  0.82117974]
+2019-01-18 10:24:12,738 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_AMGN = 0.33781687832060603 +/- 0.9957991528688114
+2019-01-18 10:24:12,738 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-01-18 10:24:12,738 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_AMZN from pickle file
+2019-01-18 10:24:12,738 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33660837099626
+2019-01-18 10:24:12,742 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_AMZN_Learning Curves
+2019-01-18 10:24:13,775 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_AMZN = 0.8960802235780481
+2019-01-18 10:24:13,775 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_AMZN = [0.75892723 0.35704917 0.48922798 0.72123179 0.89608022]
+2019-01-18 10:24:13,775 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_AMZN = 0.6445032791787615 +/- 0.3888561144417283
+2019-01-18 10:24:13,775 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.004020214080810547s
+2019-01-18 10:24:13,775 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_CVX from pickle file
+2019-01-18 10:24:13,779 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-01-18 10:24:13,779 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_CVX_Learning Curves
+2019-01-18 10:24:14,871 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_CVX = 0.676268795162017
+2019-01-18 10:24:14,871 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_CVX = [0.27727145 0.47981963 0.71734428 0.82671176 0.6762688 ]
+2019-01-18 10:24:14,871 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_CVX = 0.5954831837893336 +/- 0.3893377592117544
+2019-01-18 10:24:14,871 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.011993646621704102s
+2019-01-18 10:24:14,871 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_F from pickle file
+2019-01-18 10:24:14,875 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-01-18 10:24:14,875 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_F_Learning Curves
+2019-01-18 10:24:15,935 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_F = -0.1255683680449482
+2019-01-18 10:24:15,935 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_F = [ 0.47679238 -0.5044652   0.70969814  0.01753703 -0.12556837]
+2019-01-18 10:24:15,935 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_F = 0.11479879745621717 +/- 0.8651791538969215
+2019-01-18 10:24:15,935 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.004001140594482422s
+2019-01-18 10:24:15,935 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_FB from pickle file
+2019-01-18 10:24:15,939 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.3917309039944
+2019-01-18 10:24:15,939 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_FB_Learning Curves
+2019-01-18 10:24:16,898 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_FB = 0.87777869303608
+2019-01-18 10:24:16,898 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_FB = [0.17714819 0.72448825 0.64709468 0.40752319 0.87777869]
+2019-01-18 10:24:16,898 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_FB = 0.5668065992629743 +/- 0.4941402271387793
+2019-01-18 10:24:16,898 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-01-18 10:24:16,898 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_GOOGL from pickle file
+2019-01-18 10:24:16,902 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33835492618259
+2019-01-18 10:24:16,902 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_GOOGL_Learning Curves
+2019-01-18 10:24:17,884 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_GOOGL = 0.6933539556052517
+2019-01-18 10:24:17,884 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_GOOGL = [0.44736475 0.60554779 0.58253314 0.00814283 0.69335396]
+2019-01-18 10:24:17,884 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_GOOGL = 0.46738849278948624 +/- 0.48556293063488815
+2019-01-18 10:24:17,884 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.004002094268798828s
+2019-01-18 10:24:17,884 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_JNJ from pickle file
+2019-01-18 10:24:17,888 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-01-18 10:24:17,888 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_JNJ_Learning Curves
+2019-01-18 10:24:18,996 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_JNJ = 0.908690964689382
+2019-01-18 10:24:18,996 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_JNJ = [0.35744444 0.75358067 0.8987486  0.11986838 0.90869096]
+2019-01-18 10:24:18,996 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_JNJ = 0.6076666122851192 +/- 0.6306780766243042
+2019-01-18 10:24:18,996 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0040018558502197266s
+2019-01-18 10:24:18,996 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_MSFT from pickle file
+2019-01-18 10:24:19,000 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.3397165836844
+2019-01-18 10:24:19,000 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_MSFT_Learning Curves
+2019-01-18 10:24:20,023 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_MSFT = 0.8601107199999605
+2019-01-18 10:24:20,023 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_MSFT = [ 0.92045766  0.56492308 -0.28179467  0.05000481  0.86011072]
+2019-01-18 10:24:20,023 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_MSFT = 0.4227403206952829 +/- 0.9357489712399221
+2019-01-18 10:24:20,023 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.008001565933227539s
+2019-01-18 10:24:20,023 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_XOM from pickle file
+2019-01-18 10:24:20,027 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-01-18 10:24:20,027 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_XOM_Learning Curves
+2019-01-18 10:24:21,106 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_XOM = 0.6063453582713212
+2019-01-18 10:24:21,110 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_XOM = [0.4090367  0.84194246 0.95133792 0.88227942 0.60634536]
+2019-01-18 10:24:21,110 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_XOM = 0.7381883693579209 +/- 0.40267433129824937
+2019-01-18 10:24:21,110 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.004000425338745117s
+2019-01-18 10:24:21,110 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for BCB_7809 from pickle file
+2019-01-18 10:24:21,110 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.35139822241491
+2019-01-18 10:24:21,114 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_BCB_7809_Learning Curves
+2019-01-18 10:24:22,141 - stock_price_prediction - INFO - buildmodels - Training score for BCB_7809 = 0.8693909896283103
+2019-01-18 10:24:22,145 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for BCB_7809 = [0.41637976 0.70816283 0.67113519 0.68988913 0.86939099]
+2019-01-18 10:24:22,145 - stock_price_prediction - INFO - buildmodels - Cross validation score for BCB_7809 = 0.6709915802907472 +/- 0.29110595246435467
+2019-01-18 10:24:22,145 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.007996797561645508s
+2019-01-18 10:24:22,145 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for NASDAQOMX_COMP from pickle file
+2019-01-18 10:24:22,145 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.35051546391753
+2019-01-18 10:24:22,145 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_NASDAQOMX_COMP_Learning Curves
+2019-01-18 10:24:23,199 - stock_price_prediction - INFO - buildmodels - Training score for NASDAQOMX_COMP = 0.9187555669484297
+2019-01-18 10:24:23,200 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for NASDAQOMX_COMP = [0.16363237 0.53860363 0.13550395 0.65327415 0.91875557]
+2019-01-18 10:24:23,200 - stock_price_prediction - INFO - buildmodels - Cross validation score for NASDAQOMX_COMP = 0.4819539316588732 +/- 0.5964640350744127
+2019-01-18 10:24:23,201 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-01-18 10:24:23,201 - stock_price_prediction - INFO - buildmodels - ----------------Building model using Decision Tree Regressor----------------
+2019-01-18 10:24:23,201 - stock_price_prediction - INFO - buildmodels - Loading Decision Tree Regressor model for WIKI_AAPL from pickle file
+2019-01-18 10:24:23,205 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.34064487826278
+2019-01-18 10:24:23,206 - stock_price_prediction - INFO - buildmodels - Plotting Decision Tree Regressor_WIKI_AAPL_Learning Curves
+2019-01-18 10:24:24,870 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_AAPL = -2.704066435541008
+2019-01-18 10:24:24,870 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_AAPL = [-15.27380014  -1.61390468  -0.13149824  -1.855291    -2.70410909]
+2019-01-18 10:24:24,870 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_AAPL = -4.315720628442898 +/- 11.082889113344592
+2019-01-18 10:24:24,870 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0040013790130615234s
+2019-01-18 10:24:24,873 - stock_price_prediction - INFO - buildmodels - Loading Decision Tree Regressor model for WIKI_AMGN from pickle file
+2019-01-18 10:24:24,877 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.3353651103255
+2019-01-18 10:24:24,877 - stock_price_prediction - INFO - buildmodels - Plotting Decision Tree Regressor_WIKI_AMGN_Learning Curves
+2019-01-18 10:24:26,334 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_AMGN = -3.3830066148033797
+2019-01-18 10:24:26,334 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_AMGN = [-4.31380397 -0.81473508 -0.63003933 -1.27532909 -3.31626053]
+2019-01-18 10:24:26,334 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_AMGN = -2.070033600997587 +/- 2.948694652045631
+2019-01-18 10:24:26,334 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.008006572723388672s
+2019-01-18 10:24:26,338 - stock_price_prediction - INFO - buildmodels - Loading Decision Tree Regressor model for WIKI_AMZN from pickle file
+2019-01-18 10:24:26,338 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33660837099626
+2019-01-18 10:24:26,338 - stock_price_prediction - INFO - buildmodels - Plotting Decision Tree Regressor_WIKI_AMZN_Learning Curves
+2019-01-18 10:24:27,578 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_AMZN = -1.7130311767689377
+2019-01-18 10:24:27,578 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_AMZN = [-3.3255332  -0.33255386 -0.61063959 -1.17396415 -1.76061641]
+2019-01-18 10:24:27,578 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_AMZN = -1.4406614435586798 +/- 2.124726591401801
+2019-01-18 10:24:27,578 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.012001514434814453s
+2019-01-18 10:24:27,578 - stock_price_prediction - INFO - buildmodels - Loading Decision Tree Regressor model for WIKI_CVX from pickle file
+2019-01-18 10:24:27,586 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-01-18 10:24:27,590 - stock_price_prediction - INFO - buildmodels - Plotting Decision Tree Regressor_WIKI_CVX_Learning Curves
+2019-01-18 10:24:29,586 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_CVX = -3.058549023763975
+2019-01-18 10:24:29,590 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_CVX = [ 0.11110757 -1.18555656 -2.70407185 -1.10709694 -3.05743595]
+2019-01-18 10:24:29,590 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_CVX = -1.5886107471034563 +/- 2.312583236261224
+2019-01-18 10:24:29,590 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.003997802734375s
+2019-01-18 10:24:29,590 - stock_price_prediction - INFO - buildmodels - Loading Decision Tree Regressor model for WIKI_F from pickle file
+2019-01-18 10:24:29,594 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-01-18 10:24:29,598 - stock_price_prediction - INFO - buildmodels - Plotting Decision Tree Regressor_WIKI_F_Learning Curves
+2019-01-18 10:24:31,602 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_F = -1.5755235412094213
+2019-01-18 10:24:31,606 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_F = [-0.16216897  0.01940843 -1.69590432 -1.57248792 -1.56305663]
+2019-01-18 10:24:31,606 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_F = -0.9948418825038047 +/- 1.5152767035131323
+2019-01-18 10:24:31,606 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.003997087478637695s
+2019-01-18 10:24:31,606 - stock_price_prediction - INFO - buildmodels - Loading Decision Tree Regressor model for WIKI_FB from pickle file
+2019-01-18 10:24:31,610 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.3917309039944
+2019-01-18 10:24:31,610 - stock_price_prediction - INFO - buildmodels - Plotting Decision Tree Regressor_WIKI_FB_Learning Curves
+2019-01-18 10:24:32,410 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_FB = -5.996292030625763
+2019-01-18 10:24:32,410 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_FB = [-2.0950382  -2.69499305 -1.72155963 -9.87896427 -5.8968481 ]
+2019-01-18 10:24:32,410 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_FB = -4.457480649518407 +/- 6.173298886730834
+2019-01-18 10:24:32,410 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.007993936538696289s
+2019-01-18 10:24:32,410 - stock_price_prediction - INFO - buildmodels - Loading Decision Tree Regressor model for WIKI_GOOGL from pickle file
+2019-01-18 10:24:32,414 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33835492618259
+2019-01-18 10:24:32,414 - stock_price_prediction - INFO - buildmodels - Plotting Decision Tree Regressor_WIKI_GOOGL_Learning Curves
+2019-01-18 10:24:33,302 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_GOOGL = -3.1534500259798266
+2019-01-18 10:24:33,303 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_GOOGL = [-0.2598128  -0.56204217 -1.30489579 -3.72860717 -3.1578402 ]
+2019-01-18 10:24:33,303 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_GOOGL = -1.8026396269171623 +/- 2.787553071307712
+2019-01-18 10:24:33,304 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.002998828887939453s
+2019-01-18 10:24:33,304 - stock_price_prediction - INFO - buildmodels - Loading Decision Tree Regressor model for WIKI_JNJ from pickle file
+2019-01-18 10:24:33,310 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-01-18 10:24:33,311 - stock_price_prediction - INFO - buildmodels - Plotting Decision Tree Regressor_WIKI_JNJ_Learning Curves
+2019-01-18 10:24:35,250 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_JNJ = -2.381338445830531
+2019-01-18 10:24:35,250 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_JNJ = [ 0.16163149 -2.26809007 -2.21272269 -3.24914332 -2.38779491]
+2019-01-18 10:24:35,250 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_JNJ = -1.9912239020831124 +/- 2.2803741319141007
+2019-01-18 10:24:35,250 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.004000663757324219s
+2019-01-18 10:24:35,250 - stock_price_prediction - INFO - buildmodels - Loading Decision Tree Regressor model for WIKI_MSFT from pickle file
+2019-01-18 10:24:35,254 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.3397165836844
+2019-01-18 10:24:35,258 - stock_price_prediction - INFO - buildmodels - Plotting Decision Tree Regressor_WIKI_MSFT_Learning Curves
+2019-01-18 10:24:36,685 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_MSFT = -1.9246947692064942
+2019-01-18 10:24:36,685 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_MSFT = [-1.72952157 -3.41292831 -5.52101498 -1.57576577 -1.88250492]
+2019-01-18 10:24:36,685 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_MSFT = -2.824347110701675 +/- 3.0017475510892226
+2019-01-18 10:24:36,685 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.007995843887329102s
+2019-01-18 10:24:36,685 - stock_price_prediction - INFO - buildmodels - Loading Decision Tree Regressor model for WIKI_XOM from pickle file
+2019-01-18 10:24:36,693 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-01-18 10:24:36,693 - stock_price_prediction - INFO - buildmodels - Plotting Decision Tree Regressor_WIKI_XOM_Learning Curves
+2019-01-18 10:24:38,648 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_XOM = -0.48923232104632164
+2019-01-18 10:24:38,648 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_XOM = [-1.17691689 -3.03567476 -1.65592689 -1.08226521 -0.49321421]
+2019-01-18 10:24:38,648 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_XOM = -1.4887995913659056 +/- 1.7145228152837055
+2019-01-18 10:24:38,648 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.00602269172668457s
+2019-01-18 10:24:38,648 - stock_price_prediction - INFO - buildmodels - Loading Decision Tree Regressor model for BCB_7809 from pickle file
+2019-01-18 10:24:38,652 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.35139822241491
+2019-01-18 10:24:38,652 - stock_price_prediction - INFO - buildmodels - Plotting Decision Tree Regressor_BCB_7809_Learning Curves
+2019-01-18 10:24:39,618 - stock_price_prediction - INFO - buildmodels - Training score for BCB_7809 = -0.5180173152592302
+2019-01-18 10:24:39,618 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for BCB_7809 = [-0.75580199  0.28025178  0.22728632 -2.21983225 -0.51801732]
+2019-01-18 10:24:39,618 - stock_price_prediction - INFO - buildmodels - Cross validation score for BCB_7809 = -0.5972226911690794 +/- 1.8141795340821378
+2019-01-18 10:24:39,618 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.003998279571533203s
+2019-01-18 10:24:39,618 - stock_price_prediction - INFO - buildmodels - Loading Decision Tree Regressor model for NASDAQOMX_COMP from pickle file
+2019-01-18 10:24:39,622 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.35051546391753
+2019-01-18 10:24:39,622 - stock_price_prediction - INFO - buildmodels - Plotting Decision Tree Regressor_NASDAQOMX_COMP_Learning Curves
+2019-01-18 10:24:40,645 - stock_price_prediction - INFO - buildmodels - Training score for NASDAQOMX_COMP = -1.4670775907017282
+2019-01-18 10:24:40,645 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for NASDAQOMX_COMP = [-2.0386202   0.39808156 -1.35515515 -5.2848538  -1.46707759]
+2019-01-18 10:24:40,645 - stock_price_prediction - INFO - buildmodels - Cross validation score for NASDAQOMX_COMP = -1.94952503580787 +/- 3.712642591523922
+2019-01-18 10:24:40,645 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.003978252410888672s
+2019-01-18 10:24:40,645 - stock_price_prediction - INFO - buildmodels - ----------------Building model using Random Forest Regressor----------------
+2019-01-18 10:24:40,645 - stock_price_prediction - INFO - buildmodels - Loading Random Forest Regressor model for WIKI_AAPL from pickle file
+2019-01-18 10:24:40,833 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.34064487826278
+2019-01-18 10:24:40,845 - stock_price_prediction - INFO - buildmodels - Plotting Random Forest Regressor_WIKI_AAPL_Learning Curves
+2019-01-18 10:25:54,749 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_AAPL = -2.7673264793819357
+2019-01-18 10:25:54,749 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_AAPL = [-14.55018566  -0.48318553  -0.1495989   -1.84028512  -2.76805837]
+2019-01-18 10:25:54,749 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_AAPL = -3.958262713815857 +/- 10.758190502434635
+2019-01-18 10:25:54,749 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.11813974380493164s
+2019-01-18 10:25:54,749 - stock_price_prediction - INFO - buildmodels - Loading Random Forest Regressor model for WIKI_AMGN from pickle file
+2019-01-18 10:25:54,901 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.3353651103255
+2019-01-18 10:25:54,921 - stock_price_prediction - INFO - buildmodels - Plotting Random Forest Regressor_WIKI_AMGN_Learning Curves
+2019-01-18 10:26:59,814 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_AMGN = -3.058595108138794
+2019-01-18 10:26:59,814 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_AMGN = [-4.31215923 -1.0079177  -0.18349533 -0.55387129 -3.08475662]
+2019-01-18 10:26:59,814 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_AMGN = -1.8284400329454424 +/- 3.1938463189493875
+2019-01-18 10:26:59,814 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.18595671653747559s
+2019-01-18 10:26:59,814 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 10:26:59,814 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33660837099626
+2019-01-18 10:27:07,672 - stock_price_prediction - INFO - buildmodels - Saving Random Forest Regressor model for WIKI_AMZN to pickle file
+2019-01-18 10:27:08,072 - stock_price_prediction - INFO - buildmodels - Plotting Random Forest Regressor_WIKI_AMZN_Learning Curves
+2019-01-18 10:27:55,356 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_AMZN = -1.5356180904914412
+2019-01-18 10:27:55,356 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_AMZN = [-0.89328218  0.06642107 -0.6833151  -1.32146857 -1.52960274]
+2019-01-18 10:27:55,356 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_AMZN = -0.8722495058364453 +/- 1.1139666322270627
+2019-01-18 10:27:55,356 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.06799077987670898s
+2019-01-18 10:27:55,356 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 10:27:55,360 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-01-18 10:28:09,523 - stock_price_prediction - INFO - buildmodels - Saving Random Forest Regressor model for WIKI_CVX to pickle file
+2019-01-18 10:28:10,660 - stock_price_prediction - INFO - buildmodels - Plotting Random Forest Regressor_WIKI_CVX_Learning Curves
+2019-01-18 10:29:37,527 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_CVX = -3.4080307898930773
+2019-01-18 10:29:37,527 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_CVX = [ 0.31866075 -0.85042611 -2.63705207 -1.06813331 -3.38437894]
+2019-01-18 10:29:37,527 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_CVX = -1.5242659370676372 +/- 2.6467805703072673
+2019-01-18 10:29:37,531 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.12395787239074707s
+2019-01-18 10:29:37,531 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 10:29:37,531 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-01-18 10:29:54,160 - stock_price_prediction - INFO - buildmodels - Saving Random Forest Regressor model for WIKI_F to pickle file
+2019-01-18 10:29:56,972 - stock_price_prediction - INFO - buildmodels - Plotting Random Forest Regressor_WIKI_F_Learning Curves
+2019-01-18 10:31:24,494 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_F = -0.5729802849760712
+2019-01-18 10:31:24,494 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_F = [-0.10673753  0.00295599 -1.71529472 -1.23853674 -0.54340004]
+2019-01-18 10:31:24,498 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_F = -0.7202026099595846 +/- 1.3234607614158367
+2019-01-18 10:31:24,498 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.12693214416503906s
+2019-01-18 10:31:24,498 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 10:31:24,498 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.3917309039944
+2019-01-18 10:31:26,875 - stock_price_prediction - INFO - buildmodels - Saving Random Forest Regressor model for WIKI_FB to pickle file
+2019-01-18 10:31:27,031 - stock_price_prediction - INFO - buildmodels - Plotting Random Forest Regressor_WIKI_FB_Learning Curves
+2019-01-18 10:31:50,321 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_FB = -5.251826641027304
+2019-01-18 10:31:50,321 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_FB = [-2.17446224 -3.03030776 -1.83843223 -7.0214641  -5.08875774]
+2019-01-18 10:31:50,321 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_FB = -3.830684814071374 +/- 3.910658967214364
+2019-01-18 10:31:50,321 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0469660758972168s
+2019-01-18 10:31:50,325 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 10:31:50,325 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33835492618259
+2019-01-18 10:31:54,587 - stock_price_prediction - INFO - buildmodels - Saving Random Forest Regressor model for WIKI_GOOGL to pickle file
+2019-01-18 10:31:54,759 - stock_price_prediction - INFO - buildmodels - Plotting Random Forest Regressor_WIKI_GOOGL_Learning Curves
+2019-01-18 10:32:27,640 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_GOOGL = -3.4468013007934237
+2019-01-18 10:32:27,640 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_GOOGL = [-0.17739381  0.3429674  -1.0310177  -3.41782976 -3.49216436]
+2019-01-18 10:32:27,640 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_GOOGL = -1.5550876457976262 +/- 3.2245777318330298
+2019-01-18 10:32:27,640 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.04900789260864258s
+2019-01-18 10:32:27,640 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 10:32:27,644 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-01-18 10:32:43,032 - stock_price_prediction - INFO - buildmodels - Saving Random Forest Regressor model for WIKI_JNJ to pickle file
+2019-01-18 10:32:44,133 - stock_price_prediction - INFO - buildmodels - Plotting Random Forest Regressor_WIKI_JNJ_Learning Curves
+2019-01-18 10:34:22,663 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_JNJ = -2.0152325841896896
+2019-01-18 10:34:22,667 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_JNJ = [ 0.225186   -2.26849566 -2.19868815 -4.85918196 -2.03141241]
+2019-01-18 10:34:22,667 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_JNJ = -2.226518437645601 +/- 3.222716227231052
+2019-01-18 10:34:22,667 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.15194487571716309s
+2019-01-18 10:34:22,667 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 10:34:22,667 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.3397165836844
+2019-01-18 10:34:33,714 - stock_price_prediction - INFO - buildmodels - Saving Random Forest Regressor model for WIKI_MSFT to pickle file
+2019-01-18 10:34:34,577 - stock_price_prediction - INFO - buildmodels - Plotting Random Forest Regressor_WIKI_MSFT_Learning Curves
+2019-01-18 10:35:42,196 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_MSFT = -1.8370334764495753
+2019-01-18 10:35:42,196 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_MSFT = [-1.66498079 -3.43095828 -3.89378778 -0.60178398 -1.84023567]
+2019-01-18 10:35:42,196 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_MSFT = -2.2863493001652144 +/- 2.419399047363298
+2019-01-18 10:35:42,196 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.09197592735290527s
+2019-01-18 10:35:42,196 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 10:35:42,200 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-01-18 10:35:59,460 - stock_price_prediction - INFO - buildmodels - Saving Random Forest Regressor model for WIKI_XOM to pickle file
+2019-01-18 10:36:00,956 - stock_price_prediction - INFO - buildmodels - Plotting Random Forest Regressor_WIKI_XOM_Learning Curves
+2019-01-18 10:37:34,779 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_XOM = -0.7262088411849854
+2019-01-18 10:37:34,779 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_XOM = [-1.25255734 -3.0262083  -1.6876924  -1.00779603 -0.64556482]
+2019-01-18 10:37:34,779 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_XOM = -1.5239637784922624 +/- 1.6480827658032313
+2019-01-18 10:37:34,783 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.11197495460510254s
+2019-01-18 10:37:34,783 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 10:37:34,783 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.35139822241491
+2019-01-18 10:37:37,144 - stock_price_prediction - INFO - buildmodels - Saving Random Forest Regressor model for BCB_7809 to pickle file
+2019-01-18 10:37:37,368 - stock_price_prediction - INFO - buildmodels - Plotting Random Forest Regressor_BCB_7809_Learning Curves
+2019-01-18 10:38:05,720 - stock_price_prediction - INFO - buildmodels - Training score for BCB_7809 = -0.5706948324524403
+2019-01-18 10:38:05,720 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for BCB_7809 = [-0.13490839  0.26512519  0.42100136 -2.0821495  -0.55670232]
+2019-01-18 10:38:05,720 - stock_price_prediction - INFO - buildmodels - Cross validation score for BCB_7809 = -0.41752673001502777 +/- 1.7976328773846333
+2019-01-18 10:38:05,720 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.07998037338256836s
+2019-01-18 10:38:05,720 - stock_price_prediction - DEBUG - buildmodels - Optimizing hyper-parameters
+2019-01-18 10:38:05,720 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.35051546391753
+2019-01-18 10:38:07,777 - stock_price_prediction - INFO - buildmodels - Saving Random Forest Regressor model for NASDAQOMX_COMP to pickle file
+2019-01-18 10:38:08,001 - stock_price_prediction - INFO - buildmodels - Plotting Random Forest Regressor_NASDAQOMX_COMP_Learning Curves
+2019-01-18 10:38:33,303 - stock_price_prediction - INFO - buildmodels - Training score for NASDAQOMX_COMP = -1.4795027743755194
+2019-01-18 10:38:33,303 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for NASDAQOMX_COMP = [-2.00167414  0.44923366 -1.53348096 -5.3389069  -1.48406052]
+2019-01-18 10:38:33,303 - stock_price_prediction - INFO - buildmodels - Cross validation score for NASDAQOMX_COMP = -1.98177777111152 +/- 3.755446275666816
+2019-01-18 10:38:33,303 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.06798768043518066s
+2019-01-18 10:38:33,303 - stock_price_prediction - INFO - predictions - ----------------Predicting future prices using the Linear Regression model----------------
+2019-01-18 10:38:33,307 - stock_price_prediction - INFO - predictions - Predicting future prices for WIKI/AAPL
+2019-01-18 10:38:33,351 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 9400
+2019-01-18 10:38:33,351 - stock_price_prediction - INFO - predictions - Predicting future prices for WIKI/AMGN
+2019-01-18 10:38:33,359 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 8458
+2019-01-18 10:38:33,363 - stock_price_prediction - INFO - predictions - Predicting future prices for WIKI/AMZN
+2019-01-18 10:38:33,367 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 5248
+2019-01-18 10:38:33,371 - stock_price_prediction - INFO - predictions - Predicting future prices for WIKI/CVX
+2019-01-18 10:38:33,379 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 12168
+2019-01-18 10:38:33,379 - stock_price_prediction - INFO - predictions - Predicting future prices for WIKI/F
+2019-01-18 10:38:33,387 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 11556
+2019-01-18 10:38:33,387 - stock_price_prediction - INFO - predictions - Predicting future prices for WIKI/FB
+2019-01-18 10:38:33,395 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 1472
+2019-01-18 10:38:33,399 - stock_price_prediction - INFO - predictions - Predicting future prices for WIKI/GOOGL
+2019-01-18 10:38:33,407 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 3424
+2019-01-18 10:38:33,407 - stock_price_prediction - INFO - predictions - Predicting future prices for WIKI/JNJ
+2019-01-18 10:38:33,415 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 12168
+2019-01-18 10:38:33,419 - stock_price_prediction - INFO - predictions - Predicting future prices for WIKI/MSFT
+2019-01-18 10:38:33,427 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 8076
+2019-01-18 10:38:33,431 - stock_price_prediction - INFO - predictions - Predicting future prices for WIKI/XOM
+2019-01-18 10:38:33,439 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 12168
+2019-01-18 10:38:33,439 - stock_price_prediction - INFO - predictions - Predicting future prices for BCB/7809
+2019-01-18 10:38:33,447 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 4757
+2019-01-18 10:38:33,447 - stock_price_prediction - INFO - predictions - Predicting future prices for NASDAQOMX/COMP
+2019-01-18 10:38:33,455 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 4003
+2019-01-18 10:38:33,459 - stock_price_prediction - INFO - predictions - ----------------Predicting future prices using the Decision Tree Regressor model----------------
+2019-01-18 10:38:33,459 - stock_price_prediction - INFO - predictions - Predicting future prices for WIKI/AAPL
+2019-01-18 10:38:33,467 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 9400
+2019-01-18 10:38:33,475 - stock_price_prediction - INFO - predictions - Predicting future prices for WIKI/AMGN
+2019-01-18 10:38:33,495 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 8458
+2019-01-18 10:38:33,499 - stock_price_prediction - INFO - predictions - Predicting future prices for WIKI/AMZN
+2019-01-18 10:38:33,511 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 5248
+2019-01-18 10:38:33,515 - stock_price_prediction - INFO - predictions - Predicting future prices for WIKI/CVX
+2019-01-18 10:38:33,527 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 12168
+2019-01-18 10:38:33,536 - stock_price_prediction - INFO - predictions - Predicting future prices for WIKI/F
+2019-01-18 10:38:33,551 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 11556
+2019-01-18 10:38:33,557 - stock_price_prediction - INFO - predictions - Predicting future prices for WIKI/FB
+2019-01-18 10:38:33,568 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 1472
+2019-01-18 10:38:33,570 - stock_price_prediction - INFO - predictions - Predicting future prices for WIKI/GOOGL
+2019-01-18 10:38:33,583 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 3424
+2019-01-18 10:38:33,586 - stock_price_prediction - INFO - predictions - Predicting future prices for WIKI/JNJ
+2019-01-18 10:38:33,596 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 12168
+2019-01-18 10:38:33,599 - stock_price_prediction - INFO - predictions - Predicting future prices for WIKI/MSFT
+2019-01-18 10:38:33,611 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 8076
+2019-01-18 10:38:33,615 - stock_price_prediction - INFO - predictions - Predicting future prices for WIKI/XOM
+2019-01-18 10:38:33,626 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 12168
+2019-01-18 10:38:33,631 - stock_price_prediction - INFO - predictions - Predicting future prices for BCB/7809
+2019-01-18 10:38:33,635 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 4757
+2019-01-18 10:38:33,643 - stock_price_prediction - INFO - predictions - Predicting future prices for NASDAQOMX/COMP
+2019-01-18 10:38:33,650 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 4003
+2019-01-18 10:38:33,652 - stock_price_prediction - INFO - predictions - ----------------Predicting future prices using the Random Forest Regressor model----------------
+2019-01-18 10:38:33,653 - stock_price_prediction - INFO - predictions - Predicting future prices for WIKI/AAPL
+2019-01-18 10:38:33,668 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 9400
+2019-01-18 10:38:33,899 - stock_price_prediction - INFO - predictions - Predicting future prices for WIKI/AMGN
+2019-01-18 10:38:33,911 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 8458
+2019-01-18 10:38:34,111 - stock_price_prediction - INFO - predictions - Predicting future prices for WIKI/AMZN
+2019-01-18 10:38:34,127 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 5248
+2019-01-18 10:38:34,239 - stock_price_prediction - INFO - predictions - Predicting future prices for WIKI/CVX
+2019-01-18 10:38:34,243 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 12168
+2019-01-18 10:38:34,467 - stock_price_prediction - INFO - predictions - Predicting future prices for WIKI/F
+2019-01-18 10:38:34,475 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 11556
+2019-01-18 10:38:34,671 - stock_price_prediction - INFO - predictions - Predicting future prices for WIKI/FB
+2019-01-18 10:38:34,675 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 1472
+2019-01-18 10:38:34,703 - stock_price_prediction - INFO - predictions - Predicting future prices for WIKI/GOOGL
+2019-01-18 10:38:34,711 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 3424
+2019-01-18 10:38:34,775 - stock_price_prediction - INFO - predictions - Predicting future prices for WIKI/JNJ
+2019-01-18 10:38:34,783 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 12168
+2019-01-18 10:38:35,015 - stock_price_prediction - INFO - predictions - Predicting future prices for WIKI/MSFT
+2019-01-18 10:38:35,019 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 8076
+2019-01-18 10:38:35,183 - stock_price_prediction - INFO - predictions - Predicting future prices for WIKI/XOM
+2019-01-18 10:38:35,191 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 12168
+2019-01-18 10:38:35,427 - stock_price_prediction - INFO - predictions - Predicting future prices for BCB/7809
+2019-01-18 10:38:35,431 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 4757
+2019-01-18 10:38:35,531 - stock_price_prediction - INFO - predictions - Predicting future prices for NASDAQOMX/COMP
+2019-01-18 10:38:35,535 - stock_price_prediction - DEBUG - predictions - len(X_forecast) = 4003
+2019-01-18 10:38:35,619 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for Linear Regression model----------------
+2019-01-18 10:38:35,663 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for WIKI/AAPL
+2019-01-18 10:38:36,095 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for WIKI/AMGN
+2019-01-18 10:38:36,451 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for WIKI/AMZN
+2019-01-18 10:38:36,783 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for WIKI/CVX
+2019-01-18 10:38:37,158 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for WIKI/F
+2019-01-18 10:38:37,614 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for WIKI/FB
+2019-01-18 10:38:37,970 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for WIKI/GOOGL
+2019-01-18 10:38:38,326 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for WIKI/JNJ
+2019-01-18 10:38:38,717 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for WIKI/MSFT
+2019-01-18 10:38:39,115 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for WIKI/XOM
+2019-01-18 10:38:39,567 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for BCB/7809
+2019-01-18 10:38:40,227 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for NASDAQOMX/COMP
+2019-01-18 10:38:40,595 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for Decision Tree Regressor model----------------
+2019-01-18 10:38:40,603 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for WIKI/AAPL
+2019-01-18 10:38:40,971 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for WIKI/AMGN
+2019-01-18 10:38:41,306 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for WIKI/AMZN
+2019-01-18 10:38:41,682 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for WIKI/CVX
+2019-01-18 10:38:42,212 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for WIKI/F
+2019-01-18 10:38:42,588 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for WIKI/FB
+2019-01-18 10:38:42,972 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for WIKI/GOOGL
+2019-01-18 10:38:43,364 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for WIKI/JNJ
+2019-01-18 10:38:43,776 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for WIKI/MSFT
+2019-01-18 10:38:44,355 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for WIKI/XOM
+2019-01-18 10:38:44,743 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for BCB/7809
+2019-01-18 10:38:45,091 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for NASDAQOMX/COMP
+2019-01-18 10:38:45,451 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for Random Forest Regressor model----------------
+2019-01-18 10:38:45,463 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for WIKI/AAPL
+2019-01-18 10:38:45,939 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for WIKI/AMGN
+2019-01-18 10:38:46,541 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for WIKI/AMZN
+2019-01-18 10:38:46,941 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for WIKI/CVX
+2019-01-18 10:38:47,365 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for WIKI/F
+2019-01-18 10:38:47,737 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for WIKI/FB
+2019-01-18 10:38:48,101 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for WIKI/GOOGL
+2019-01-18 10:38:48,816 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for WIKI/JNJ
+2019-01-18 10:38:49,203 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for WIKI/MSFT
+2019-01-18 10:38:49,587 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for WIKI/XOM
+2019-01-18 10:38:49,963 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for BCB/7809
+2019-01-18 10:38:50,339 - stock_price_prediction - INFO - stockpriceprediction - ----------------Plotting stock prices for NASDAQOMX/COMP
+2019-03-21 14:44:02,329 - stock_price_prediction - INFO - stockpriceprediction - ------------------Started Stock Price Prediction-----------------
+2019-03-21 15:11:30,629 - stock_price_prediction - INFO - stockpriceprediction - ------------------Started Stock Price Prediction-----------------
+2019-03-21 15:11:30,637 - stock_price_prediction - INFO - getdata - ----------------Getting stock data from Quandl----------------
+2019-03-21 15:11:30,637 - stock_price_prediction - INFO - getdata - Stock ticker list = ['WIKI/AAPL', 'WIKI/AMGN', 'WIKI/AMZN', 'WIKI/CVX', 'WIKI/F', 'WIKI/FB', 'WIKI/GOOGL', 'WIKI/JNJ', 'WIKI/MSFT', 'WIKI/XOM', 'BCB/7809', 'NASDAQOMX/COMP']
+2019-03-21 15:11:30,637 - stock_price_prediction - INFO - getdata - Reading stock data from stockdata/stockdata.csv
+2019-03-21 15:11:31,700 - stock_price_prediction - DEBUG - getdata - df.shape = (12356, 127)
+2019-03-21 15:11:31,700 - stock_price_prediction - DEBUG - getdata - Getting stock ticker list
+2019-03-21 15:11:31,700 - stock_price_prediction - INFO - preprocessing - ----------------Pre-processing data----------------
+2019-03-21 15:11:31,769 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/AAPL = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:11:31,985 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/AMGN = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:11:32,105 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/AMZN = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:11:32,194 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/CVX = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:11:32,298 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/F = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:11:32,410 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/FB = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:11:32,495 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/GOOGL = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:11:32,595 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/JNJ = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:11:32,695 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/MSFT = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:11:32,795 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/XOM = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:11:32,878 - stock_price_prediction - DEBUG - preprocessing - Feature list for BCB/7809 = ['Value']
+2019-03-21 15:11:32,921 - stock_price_prediction - DEBUG - preprocessing - Feature list for NASDAQOMX/COMP = ['Index Value']
+2019-03-21 15:11:32,971 - stock_price_prediction - INFO - buildmodels - ----------------Building model using Linear Regression----------------
+2019-03-21 15:11:32,971 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_AAPL from pickle file
+2019-03-21 15:11:33,143 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.34064487826278
+2019-03-21 15:11:33,382 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_AAPL_Learning Curves
+2019-03-21 15:11:38,896 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_AAPL = 0.7039547958011347
+2019-03-21 15:11:38,900 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_AAPL = [-3.21250277  0.03451818  0.29194846  0.70843746  0.7039548 ]
+2019-03-21 15:11:38,900 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_AAPL = -0.2947287738483156 +/- 2.962392305619089
+2019-03-21 15:11:38,900 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.004000425338745117s
+2019-03-21 15:11:38,900 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_AMGN from pickle file
+2019-03-21 15:11:38,947 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.3353651103255
+2019-03-21 15:11:38,947 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_AMGN_Learning Curves
+2019-03-21 15:11:40,604 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_AMGN = 0.8211797436066919
+2019-03-21 15:11:40,604 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_AMGN = [ 0.4989184   0.87106367 -0.21884688 -0.28323055  0.82117974]
+2019-03-21 15:11:40,604 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_AMGN = 0.33781687832060825 +/- 0.9957991528688044
+2019-03-21 15:11:40,608 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-03-21 15:11:40,612 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_AMZN from pickle file
+2019-03-21 15:11:40,687 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33660837099626
+2019-03-21 15:11:40,691 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_AMZN_Learning Curves
+2019-03-21 15:11:42,251 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_AMZN = 0.8960802235780481
+2019-03-21 15:11:42,266 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_AMZN = [0.75892723 0.35704917 0.48922798 0.72123179 0.89608022]
+2019-03-21 15:11:42,266 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_AMZN = 0.6445032791787615 +/- 0.38885611444172896
+2019-03-21 15:11:42,266 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.007533550262451172s
+2019-03-21 15:11:42,266 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_CVX from pickle file
+2019-03-21 15:11:42,467 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-03-21 15:11:42,467 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_CVX_Learning Curves
+2019-03-21 15:11:44,304 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_CVX = 0.676268795162017
+2019-03-21 15:11:44,304 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_CVX = [0.27727145 0.47981963 0.71734428 0.82671176 0.6762688 ]
+2019-03-21 15:11:44,304 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_CVX = 0.5954831837893337 +/- 0.3893377592117563
+2019-03-21 15:11:44,309 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.01564931869506836s
+2019-03-21 15:11:44,309 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_F from pickle file
+2019-03-21 15:11:44,465 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-03-21 15:11:44,465 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_F_Learning Curves
+2019-03-21 15:11:45,725 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_F = -0.1255683680449482
+2019-03-21 15:11:45,725 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_F = [ 0.47679238 -0.5044652   0.70969814  0.01753703 -0.12556837]
+2019-03-21 15:11:45,725 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_F = 0.11479879745621906 +/- 0.8651791538969151
+2019-03-21 15:11:45,725 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-03-21 15:11:45,725 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_FB from pickle file
+2019-03-21 15:11:45,756 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.3917309039944
+2019-03-21 15:11:45,756 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_FB_Learning Curves
+2019-03-21 15:11:46,686 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_FB = 0.87777869303608
+2019-03-21 15:11:46,686 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_FB = [0.17714819 0.72448825 0.64709468 0.40752319 0.87777869]
+2019-03-21 15:11:46,686 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_FB = 0.5668065992629746 +/- 0.49414022713877925
+2019-03-21 15:11:46,690 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-03-21 15:11:46,690 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_GOOGL from pickle file
+2019-03-21 15:11:46,734 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33835492618259
+2019-03-21 15:11:46,734 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_GOOGL_Learning Curves
+2019-03-21 15:11:47,710 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_GOOGL = 0.6933539556052517
+2019-03-21 15:11:47,710 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_GOOGL = [0.44736475 0.60554779 0.58253314 0.00814283 0.69335396]
+2019-03-21 15:11:47,710 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_GOOGL = 0.4673884927894868 +/- 0.4855629306348832
+2019-03-21 15:11:47,710 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-03-21 15:11:47,710 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_JNJ from pickle file
+2019-03-21 15:11:47,757 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-03-21 15:11:47,757 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_JNJ_Learning Curves
+2019-03-21 15:11:48,768 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_JNJ = 0.9086909646893819
+2019-03-21 15:11:48,768 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_JNJ = [0.35744444 0.75358067 0.8987486  0.11986838 0.90869096]
+2019-03-21 15:11:48,774 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_JNJ = 0.6076666122851198 +/- 0.6306780766242992
+2019-03-21 15:11:48,774 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-03-21 15:11:48,774 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_MSFT from pickle file
+2019-03-21 15:11:48,805 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.3397165836844
+2019-03-21 15:11:48,805 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_MSFT_Learning Curves
+2019-03-21 15:11:49,735 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_MSFT = 0.8601107199999605
+2019-03-21 15:11:49,735 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_MSFT = [ 0.92045766  0.56492308 -0.28179467  0.05000481  0.86011072]
+2019-03-21 15:11:49,735 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_MSFT = 0.42274032069528145 +/- 0.9357489712399197
+2019-03-21 15:11:49,751 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.004015922546386719s
+2019-03-21 15:11:49,751 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_XOM from pickle file
+2019-03-21 15:11:49,807 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-03-21 15:11:49,807 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_XOM_Learning Curves
+2019-03-21 15:11:50,825 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_XOM = 0.6063453582713212
+2019-03-21 15:11:50,825 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_XOM = [0.4090367  0.84194246 0.95133792 0.88227942 0.60634536]
+2019-03-21 15:11:50,825 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_XOM = 0.7381883693579204 +/- 0.40267433129825037
+2019-03-21 15:11:50,825 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.008161306381225586s
+2019-03-21 15:11:50,825 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for BCB_7809 from pickle file
+2019-03-21 15:11:50,856 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.35139822241491
+2019-03-21 15:11:50,856 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_BCB_7809_Learning Curves
+2019-03-21 15:11:51,736 - stock_price_prediction - INFO - buildmodels - Training score for BCB_7809 = 0.8693909896283103
+2019-03-21 15:11:51,736 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for BCB_7809 = [0.41637976 0.70816283 0.67113519 0.68988913 0.86939099]
+2019-03-21 15:11:51,736 - stock_price_prediction - INFO - buildmodels - Cross validation score for BCB_7809 = 0.6709915802907467 +/- 0.29110595246435444
+2019-03-21 15:11:51,736 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-03-21 15:11:51,736 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for NASDAQOMX_COMP from pickle file
+2019-03-21 15:11:51,767 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.35051546391753
+2019-03-21 15:11:51,767 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_NASDAQOMX_COMP_Learning Curves
+2019-03-21 15:11:52,989 - stock_price_prediction - INFO - buildmodels - Training score for NASDAQOMX_COMP = 0.9187555669484297
+2019-03-21 15:11:52,989 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for NASDAQOMX_COMP = [0.16363237 0.53860363 0.13550395 0.65327415 0.91875557]
+2019-03-21 15:11:52,989 - stock_price_prediction - INFO - buildmodels - Cross validation score for NASDAQOMX_COMP = 0.4819539316588736 +/- 0.5964640350744118
+2019-03-21 15:11:52,989 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.015644311904907227s
+2019-03-21 15:11:52,989 - stock_price_prediction - INFO - buildmodels - ----------------Building model using Decision Tree Regressor----------------
+2019-03-21 15:11:52,989 - stock_price_prediction - INFO - buildmodels - Loading Decision Tree Regressor model for WIKI_AAPL from pickle file
+2019-03-21 15:14:18,840 - stock_price_prediction - INFO - stockpriceprediction - ------------------Started Stock Price Prediction-----------------
+2019-03-21 15:14:18,849 - stock_price_prediction - INFO - getdata - ----------------Getting stock data from Quandl----------------
+2019-03-21 15:14:18,849 - stock_price_prediction - INFO - getdata - Stock ticker list = ['WIKI/AAPL', 'WIKI/AMGN', 'WIKI/AMZN', 'WIKI/CVX', 'WIKI/F', 'WIKI/FB', 'WIKI/GOOGL', 'WIKI/JNJ', 'WIKI/MSFT', 'WIKI/XOM', 'BCB/7809', 'NASDAQOMX/COMP']
+2019-03-21 15:14:18,849 - stock_price_prediction - INFO - getdata - Reading stock data from stockdata/stockdata.csv
+2019-03-21 15:14:19,336 - stock_price_prediction - DEBUG - getdata - df.shape = (12356, 127)
+2019-03-21 15:14:19,336 - stock_price_prediction - DEBUG - getdata - Getting stock ticker list
+2019-03-21 15:14:19,336 - stock_price_prediction - INFO - preprocessing - ----------------Pre-processing data----------------
+2019-03-21 15:14:19,396 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/AAPL = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:14:19,477 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/AMGN = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:14:19,548 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/AMZN = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:14:19,639 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/CVX = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:14:19,708 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/F = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:14:19,777 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/FB = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:14:19,855 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/GOOGL = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:14:19,940 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/JNJ = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:14:20,039 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/MSFT = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:14:20,124 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/XOM = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:14:20,209 - stock_price_prediction - DEBUG - preprocessing - Feature list for BCB/7809 = ['Value']
+2019-03-21 15:14:20,256 - stock_price_prediction - DEBUG - preprocessing - Feature list for NASDAQOMX/COMP = ['Index Value']
+2019-03-21 15:14:20,294 - stock_price_prediction - INFO - buildmodels - ----------------Building model using Linear Regression----------------
+2019-03-21 15:14:20,294 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_AAPL from pickle file
+2019-03-21 15:14:20,309 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.34064487826278
+2019-03-21 15:14:20,309 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_AAPL_Learning Curves
+2019-03-21 15:14:21,637 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_AAPL = 0.7039547958011347
+2019-03-21 15:14:21,638 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_AAPL = [-3.21250277  0.03451818  0.29194846  0.70843746  0.7039548 ]
+2019-03-21 15:14:21,638 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_AAPL = -0.2947287738483156 +/- 2.962392305619089
+2019-03-21 15:14:21,641 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.004005908966064453s
+2019-03-21 15:14:21,641 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_AMGN from pickle file
+2019-03-21 15:14:21,643 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.3353651103255
+2019-03-21 15:14:21,644 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_AMGN_Learning Curves
+2019-03-21 15:14:22,790 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_AMGN = 0.8211797436066919
+2019-03-21 15:14:22,790 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_AMGN = [ 0.4989184   0.87106367 -0.21884688 -0.28323055  0.82117974]
+2019-03-21 15:14:22,790 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_AMGN = 0.33781687832060825 +/- 0.9957991528688044
+2019-03-21 15:14:22,790 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0020377635955810547s
+2019-03-21 15:14:22,790 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_AMZN from pickle file
+2019-03-21 15:14:22,800 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33660837099626
+2019-03-21 15:14:22,800 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_AMZN_Learning Curves
+2019-03-21 15:14:24,058 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_AMZN = 0.8960802235780481
+2019-03-21 15:14:24,058 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_AMZN = [0.75892723 0.35704917 0.48922798 0.72123179 0.89608022]
+2019-03-21 15:14:24,058 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_AMZN = 0.6445032791787615 +/- 0.38885611444172896
+2019-03-21 15:14:24,060 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.00803065299987793s
+2019-03-21 15:14:24,060 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_CVX from pickle file
+2019-03-21 15:14:24,060 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-03-21 15:14:24,060 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_CVX_Learning Curves
+2019-03-21 15:14:25,297 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_CVX = 0.676268795162017
+2019-03-21 15:14:25,297 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_CVX = [0.27727145 0.47981963 0.71734428 0.82671176 0.6762688 ]
+2019-03-21 15:14:25,297 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_CVX = 0.5954831837893337 +/- 0.3893377592117563
+2019-03-21 15:14:25,297 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-03-21 15:14:25,297 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_F from pickle file
+2019-03-21 15:14:25,297 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-03-21 15:14:25,297 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_F_Learning Curves
+2019-03-21 15:14:26,445 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_F = -0.1255683680449482
+2019-03-21 15:14:26,445 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_F = [ 0.47679238 -0.5044652   0.70969814  0.01753703 -0.12556837]
+2019-03-21 15:14:26,445 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_F = 0.11479879745621906 +/- 0.8651791538969151
+2019-03-21 15:14:26,445 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.018090009689331055s
+2019-03-21 15:14:26,445 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_FB from pickle file
+2019-03-21 15:14:26,445 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.3917309039944
+2019-03-21 15:14:26,445 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_FB_Learning Curves
+2019-03-21 15:14:27,428 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_FB = 0.87777869303608
+2019-03-21 15:14:27,428 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_FB = [0.17714819 0.72448825 0.64709468 0.40752319 0.87777869]
+2019-03-21 15:14:27,428 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_FB = 0.5668065992629746 +/- 0.49414022713877925
+2019-03-21 15:14:27,428 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-03-21 15:14:27,443 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_GOOGL from pickle file
+2019-03-21 15:14:27,443 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33835492618259
+2019-03-21 15:14:27,443 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_GOOGL_Learning Curves
+2019-03-21 15:14:28,470 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_GOOGL = 0.6933539556052517
+2019-03-21 15:14:28,755 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_GOOGL = [0.44736475 0.60554779 0.58253314 0.00814283 0.69335396]
+2019-03-21 15:14:28,755 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_GOOGL = 0.4673884927894868 +/- 0.4855629306348832
+2019-03-21 15:14:28,755 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-03-21 15:14:28,755 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_JNJ from pickle file
+2019-03-21 15:14:28,755 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-03-21 15:14:28,755 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_JNJ_Learning Curves
+2019-03-21 15:14:29,820 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_JNJ = 0.9086909646893819
+2019-03-21 15:14:29,820 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_JNJ = [0.35744444 0.75358067 0.8987486  0.11986838 0.90869096]
+2019-03-21 15:14:29,820 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_JNJ = 0.6076666122851198 +/- 0.6306780766242992
+2019-03-21 15:14:29,826 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.015624284744262695s
+2019-03-21 15:14:29,826 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_MSFT from pickle file
+2019-03-21 15:14:29,826 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.3397165836844
+2019-03-21 15:14:29,826 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_MSFT_Learning Curves
+2019-03-21 15:14:30,912 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_MSFT = 0.8601107199999605
+2019-03-21 15:14:30,912 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_MSFT = [ 0.92045766  0.56492308 -0.28179467  0.05000481  0.86011072]
+2019-03-21 15:14:30,912 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_MSFT = 0.42274032069528145 +/- 0.9357489712399197
+2019-03-21 15:14:30,912 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-03-21 15:14:30,912 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_XOM from pickle file
+2019-03-21 15:14:30,912 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-03-21 15:14:30,912 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_XOM_Learning Curves
+2019-03-21 15:14:32,043 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_XOM = 0.6063453582713212
+2019-03-21 15:14:32,043 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_XOM = [0.4090367  0.84194246 0.95133792 0.88227942 0.60634536]
+2019-03-21 15:14:32,043 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_XOM = 0.7381883693579204 +/- 0.40267433129825037
+2019-03-21 15:14:32,043 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-03-21 15:14:32,043 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for BCB_7809 from pickle file
+2019-03-21 15:14:32,043 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.35139822241491
+2019-03-21 15:14:32,043 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_BCB_7809_Learning Curves
+2019-03-21 15:14:33,019 - stock_price_prediction - INFO - buildmodels - Training score for BCB_7809 = 0.8693909896283103
+2019-03-21 15:14:33,035 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for BCB_7809 = [0.41637976 0.70816283 0.67113519 0.68988913 0.86939099]
+2019-03-21 15:14:33,035 - stock_price_prediction - INFO - buildmodels - Cross validation score for BCB_7809 = 0.6709915802907467 +/- 0.29110595246435444
+2019-03-21 15:14:33,035 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-03-21 15:14:33,035 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for NASDAQOMX_COMP from pickle file
+2019-03-21 15:14:33,035 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.35051546391753
+2019-03-21 15:14:33,035 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_NASDAQOMX_COMP_Learning Curves
+2019-03-21 15:14:34,092 - stock_price_prediction - INFO - buildmodels - Training score for NASDAQOMX_COMP = 0.9187555669484297
+2019-03-21 15:14:34,092 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for NASDAQOMX_COMP = [0.16363237 0.53860363 0.13550395 0.65327415 0.91875557]
+2019-03-21 15:14:34,092 - stock_price_prediction - INFO - buildmodels - Cross validation score for NASDAQOMX_COMP = 0.4819539316588736 +/- 0.5964640350744118
+2019-03-21 15:14:34,092 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.01562356948852539s
+2019-03-21 15:14:34,092 - stock_price_prediction - INFO - buildmodels - ----------------Building model using Decision Tree Regressor----------------
+2019-03-21 15:14:34,092 - stock_price_prediction - INFO - buildmodels - Loading Decision Tree Regressor model for WIKI_AAPL from pickle file
+2019-03-21 15:16:05,970 - stock_price_prediction - INFO - stockpriceprediction - ------------------Started Stock Price Prediction-----------------
+2019-03-21 15:16:05,992 - stock_price_prediction - INFO - getdata - ----------------Getting stock data from Quandl----------------
+2019-03-21 15:16:05,992 - stock_price_prediction - INFO - getdata - Stock ticker list = ['WIKI/AAPL', 'WIKI/AMGN', 'WIKI/AMZN', 'WIKI/CVX', 'WIKI/F', 'WIKI/FB', 'WIKI/GOOGL', 'WIKI/JNJ', 'WIKI/MSFT', 'WIKI/XOM', 'BCB/7809', 'NASDAQOMX/COMP']
+2019-03-21 15:16:05,992 - stock_price_prediction - INFO - getdata - Reading stock data from stockdata/stockdata.csv
+2019-03-21 15:16:06,629 - stock_price_prediction - DEBUG - getdata - df.shape = (12356, 127)
+2019-03-21 15:16:06,629 - stock_price_prediction - DEBUG - getdata - Getting stock ticker list
+2019-03-21 15:16:06,629 - stock_price_prediction - INFO - preprocessing - ----------------Pre-processing data----------------
+2019-03-21 15:16:06,701 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/AAPL = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:16:06,817 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/AMGN = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:16:06,882 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/AMZN = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:16:06,948 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/CVX = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:16:07,010 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/F = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:16:07,089 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/FB = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:16:07,151 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/GOOGL = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:16:07,212 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/JNJ = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:16:07,273 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/MSFT = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:16:07,343 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/XOM = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:16:07,414 - stock_price_prediction - DEBUG - preprocessing - Feature list for BCB/7809 = ['Value']
+2019-03-21 15:16:07,444 - stock_price_prediction - DEBUG - preprocessing - Feature list for NASDAQOMX/COMP = ['Index Value']
+2019-03-21 15:16:07,482 - stock_price_prediction - INFO - buildmodels - ----------------Building model using Linear Regression----------------
+2019-03-21 15:16:07,482 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_AAPL from pickle file
+2019-03-21 15:16:07,545 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.34064487826278
+2019-03-21 15:16:07,545 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_AAPL_Learning Curves
+2019-03-21 15:16:08,671 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_AAPL = 0.7039547958011347
+2019-03-21 15:16:08,671 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_AAPL = [-3.21250277  0.03451818  0.29194846  0.70843746  0.7039548 ]
+2019-03-21 15:16:08,671 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_AAPL = -0.2947287738483156 +/- 2.962392305619089
+2019-03-21 15:16:08,671 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.015625953674316406s
+2019-03-21 15:16:08,671 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_AMGN from pickle file
+2019-03-21 15:16:08,702 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.3353651103255
+2019-03-21 15:16:08,702 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_AMGN_Learning Curves
+2019-03-21 15:16:09,773 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_AMGN = 0.8211797436066919
+2019-03-21 15:16:09,773 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_AMGN = [ 0.4989184   0.87106367 -0.21884688 -0.28323055  0.82117974]
+2019-03-21 15:16:09,773 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_AMGN = 0.33781687832060825 +/- 0.9957991528688044
+2019-03-21 15:16:09,773 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-03-21 15:16:09,773 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_AMZN from pickle file
+2019-03-21 15:16:09,805 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33660837099626
+2019-03-21 15:16:09,805 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_AMZN_Learning Curves
+2019-03-21 15:16:10,823 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_AMZN = 0.8960802235780481
+2019-03-21 15:16:10,839 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_AMZN = [0.75892723 0.35704917 0.48922798 0.72123179 0.89608022]
+2019-03-21 15:16:10,839 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_AMZN = 0.6445032791787615 +/- 0.38885611444172896
+2019-03-21 15:16:10,839 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-03-21 15:16:10,839 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_CVX from pickle file
+2019-03-21 15:16:10,876 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-03-21 15:16:10,876 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_CVX_Learning Curves
+2019-03-21 15:16:12,037 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_CVX = 0.676268795162017
+2019-03-21 15:16:12,037 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_CVX = [0.27727145 0.47981963 0.71734428 0.82671176 0.6762688 ]
+2019-03-21 15:16:12,037 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_CVX = 0.5954831837893337 +/- 0.3893377592117563
+2019-03-21 15:16:12,037 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0019986629486083984s
+2019-03-21 15:16:12,037 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_F from pickle file
+2019-03-21 15:16:12,080 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-03-21 15:16:12,080 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_F_Learning Curves
+2019-03-21 15:16:13,233 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_F = -0.1255683680449482
+2019-03-21 15:16:13,233 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_F = [ 0.47679238 -0.5044652   0.70969814  0.01753703 -0.12556837]
+2019-03-21 15:16:13,233 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_F = 0.11479879745621906 +/- 0.8651791538969151
+2019-03-21 15:16:13,249 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-03-21 15:16:13,249 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_FB from pickle file
+2019-03-21 15:16:13,588 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.3917309039944
+2019-03-21 15:16:13,588 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_FB_Learning Curves
+2019-03-21 15:16:14,579 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_FB = 0.87777869303608
+2019-03-21 15:16:14,579 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_FB = [0.17714819 0.72448825 0.64709468 0.40752319 0.87777869]
+2019-03-21 15:16:14,579 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_FB = 0.5668065992629746 +/- 0.49414022713877925
+2019-03-21 15:16:14,579 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-03-21 15:16:14,579 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_GOOGL from pickle file
+2019-03-21 15:16:14,610 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33835492618259
+2019-03-21 15:16:14,610 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_GOOGL_Learning Curves
+2019-03-21 15:16:15,676 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_GOOGL = 0.6933539556052517
+2019-03-21 15:16:15,676 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_GOOGL = [0.44736475 0.60554779 0.58253314 0.00814283 0.69335396]
+2019-03-21 15:16:15,676 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_GOOGL = 0.4673884927894868 +/- 0.4855629306348832
+2019-03-21 15:16:15,676 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.015604019165039062s
+2019-03-21 15:16:15,682 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_JNJ from pickle file
+2019-03-21 15:16:15,713 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-03-21 15:16:15,713 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_JNJ_Learning Curves
+2019-03-21 15:16:16,893 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_JNJ = 0.9086909646893819
+2019-03-21 15:16:16,893 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_JNJ = [0.35744444 0.75358067 0.8987486  0.11986838 0.90869096]
+2019-03-21 15:16:16,894 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_JNJ = 0.6076666122851198 +/- 0.6306780766242992
+2019-03-21 15:16:16,896 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0029990673065185547s
+2019-03-21 15:16:16,898 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_MSFT from pickle file
+2019-03-21 15:16:16,932 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.3397165836844
+2019-03-21 15:16:16,933 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_MSFT_Learning Curves
+2019-03-21 15:16:18,101 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_MSFT = 0.8601107199999605
+2019-03-21 15:16:18,101 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_MSFT = [ 0.92045766  0.56492308 -0.28179467  0.05000481  0.86011072]
+2019-03-21 15:16:18,101 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_MSFT = 0.42274032069528145 +/- 0.9357489712399197
+2019-03-21 15:16:18,101 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-03-21 15:16:18,117 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_XOM from pickle file
+2019-03-21 15:16:18,170 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-03-21 15:16:18,170 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_XOM_Learning Curves
+2019-03-21 15:16:19,525 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_XOM = 0.6063453582713212
+2019-03-21 15:16:19,525 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_XOM = [0.4090367  0.84194246 0.95133792 0.88227942 0.60634536]
+2019-03-21 15:16:19,525 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_XOM = 0.7381883693579204 +/- 0.40267433129825037
+2019-03-21 15:16:19,525 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.015605449676513672s
+2019-03-21 15:16:19,525 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for BCB_7809 from pickle file
+2019-03-21 15:16:19,556 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.35139822241491
+2019-03-21 15:16:19,556 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_BCB_7809_Learning Curves
+2019-03-21 15:16:20,552 - stock_price_prediction - INFO - buildmodels - Training score for BCB_7809 = 0.8693909896283103
+2019-03-21 15:16:20,552 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for BCB_7809 = [0.41637976 0.70816283 0.67113519 0.68988913 0.86939099]
+2019-03-21 15:16:20,560 - stock_price_prediction - INFO - buildmodels - Cross validation score for BCB_7809 = 0.6709915802907467 +/- 0.29110595246435444
+2019-03-21 15:16:20,562 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-03-21 15:16:20,562 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for NASDAQOMX_COMP from pickle file
+2019-03-21 15:16:20,721 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.35051546391753
+2019-03-21 15:16:20,721 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_NASDAQOMX_COMP_Learning Curves
+2019-03-21 15:16:21,782 - stock_price_prediction - INFO - buildmodels - Training score for NASDAQOMX_COMP = 0.9187555669484297
+2019-03-21 15:16:21,782 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for NASDAQOMX_COMP = [0.16363237 0.53860363 0.13550395 0.65327415 0.91875557]
+2019-03-21 15:16:21,783 - stock_price_prediction - INFO - buildmodels - Cross validation score for NASDAQOMX_COMP = 0.4819539316588736 +/- 0.5964640350744118
+2019-03-21 15:16:21,785 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.011020660400390625s
+2019-03-21 15:16:21,786 - stock_price_prediction - INFO - buildmodels - ----------------Building model using Decision Tree Regressor----------------
+2019-03-21 15:16:21,788 - stock_price_prediction - INFO - buildmodels - Loading Decision Tree Regressor model for WIKI_AAPL from pickle file
+2019-03-21 15:18:01,311 - stock_price_prediction - INFO - stockpriceprediction - ------------------Started Stock Price Prediction-----------------
+2019-03-21 15:18:01,348 - stock_price_prediction - INFO - getdata - ----------------Getting stock data from Quandl----------------
+2019-03-21 15:18:01,348 - stock_price_prediction - INFO - getdata - Stock ticker list = ['WIKI/AAPL', 'WIKI/AMGN', 'WIKI/AMZN', 'WIKI/CVX', 'WIKI/F', 'WIKI/FB', 'WIKI/GOOGL', 'WIKI/JNJ', 'WIKI/MSFT', 'WIKI/XOM', 'BCB/7809', 'NASDAQOMX/COMP']
+2019-03-21 15:18:01,348 - stock_price_prediction - INFO - getdata - Reading stock data from stockdata/stockdata.csv
+2019-03-21 15:18:02,038 - stock_price_prediction - DEBUG - getdata - df.shape = (12356, 127)
+2019-03-21 15:18:02,039 - stock_price_prediction - DEBUG - getdata - Getting stock ticker list
+2019-03-21 15:18:02,039 - stock_price_prediction - INFO - preprocessing - ----------------Pre-processing data----------------
+2019-03-21 15:18:02,099 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/AAPL = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:18:02,235 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/AMGN = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:18:02,317 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/AMZN = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:18:02,384 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/CVX = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:18:02,500 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/F = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:18:02,600 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/FB = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:18:02,699 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/GOOGL = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:18:02,783 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/JNJ = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:18:02,864 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/MSFT = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:18:02,946 - stock_price_prediction - DEBUG - preprocessing - Feature list for WIKI/XOM = ['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume']
+2019-03-21 15:18:03,037 - stock_price_prediction - DEBUG - preprocessing - Feature list for BCB/7809 = ['Value']
+2019-03-21 15:18:03,078 - stock_price_prediction - DEBUG - preprocessing - Feature list for NASDAQOMX/COMP = ['Index Value']
+2019-03-21 15:18:03,128 - stock_price_prediction - INFO - buildmodels - ----------------Building model using Linear Regression----------------
+2019-03-21 15:18:03,128 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_AAPL from pickle file
+2019-03-21 15:18:03,213 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.34064487826278
+2019-03-21 15:18:03,213 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_AAPL_Learning Curves
+2019-03-21 15:18:04,370 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_AAPL = 0.7039547958011347
+2019-03-21 15:18:04,370 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_AAPL = [-3.21250277  0.03451818  0.29194846  0.70843746  0.7039548 ]
+2019-03-21 15:18:04,370 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_AAPL = -0.2947287738483156 +/- 2.962392305619089
+2019-03-21 15:18:04,370 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.015625476837158203s
+2019-03-21 15:18:04,370 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_AMGN from pickle file
+2019-03-21 15:18:04,401 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.3353651103255
+2019-03-21 15:18:04,401 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_AMGN_Learning Curves
+2019-03-21 15:18:05,453 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_AMGN = 0.8211797436066919
+2019-03-21 15:18:05,453 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_AMGN = [ 0.4989184   0.87106367 -0.21884688 -0.28323055  0.82117974]
+2019-03-21 15:18:05,468 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_AMGN = 0.33781687832060825 +/- 0.9957991528688044
+2019-03-21 15:18:05,468 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.006511211395263672s
+2019-03-21 15:18:05,468 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_AMZN from pickle file
+2019-03-21 15:18:05,506 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33660837099626
+2019-03-21 15:18:05,506 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_AMZN_Learning Curves
+2019-03-21 15:18:06,440 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_AMZN = 0.8960802235780481
+2019-03-21 15:18:06,440 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_AMZN = [0.75892723 0.35704917 0.48922798 0.72123179 0.89608022]
+2019-03-21 15:18:06,456 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_AMZN = 0.6445032791787615 +/- 0.38885611444172896
+2019-03-21 15:18:06,456 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-03-21 15:18:06,456 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_CVX from pickle file
+2019-03-21 15:18:06,487 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-03-21 15:18:06,487 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_CVX_Learning Curves
+2019-03-21 15:18:07,641 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_CVX = 0.676268795162017
+2019-03-21 15:18:07,641 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_CVX = [0.27727145 0.47981963 0.71734428 0.82671176 0.6762688 ]
+2019-03-21 15:18:07,641 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_CVX = 0.5954831837893337 +/- 0.3893377592117563
+2019-03-21 15:18:07,641 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-03-21 15:18:07,641 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_F from pickle file
+2019-03-21 15:18:07,879 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-03-21 15:18:07,879 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_F_Learning Curves
+2019-03-21 15:18:08,967 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_F = -0.1255683680449482
+2019-03-21 15:18:08,967 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_F = [ 0.47679238 -0.5044652   0.70969814  0.01753703 -0.12556837]
+2019-03-21 15:18:08,967 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_F = 0.11479879745621906 +/- 0.8651791538969151
+2019-03-21 15:18:08,967 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-03-21 15:18:08,967 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_FB from pickle file
+2019-03-21 15:18:08,982 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.3917309039944
+2019-03-21 15:18:08,982 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_FB_Learning Curves
+2019-03-21 15:18:09,885 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_FB = 0.87777869303608
+2019-03-21 15:18:09,885 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_FB = [0.17714819 0.72448825 0.64709468 0.40752319 0.87777869]
+2019-03-21 15:18:09,885 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_FB = 0.5668065992629746 +/- 0.49414022713877925
+2019-03-21 15:18:09,885 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.015642166137695312s
+2019-03-21 15:18:09,885 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_GOOGL from pickle file
+2019-03-21 15:18:09,932 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33835492618259
+2019-03-21 15:18:09,932 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_GOOGL_Learning Curves
+2019-03-21 15:18:11,019 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_GOOGL = 0.6933539556052517
+2019-03-21 15:18:11,019 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_GOOGL = [0.44736475 0.60554779 0.58253314 0.00814283 0.69335396]
+2019-03-21 15:18:11,019 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_GOOGL = 0.4673884927894868 +/- 0.4855629306348832
+2019-03-21 15:18:11,019 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.022149324417114258s
+2019-03-21 15:18:11,019 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_JNJ from pickle file
+2019-03-21 15:18:11,134 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-03-21 15:18:11,134 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_JNJ_Learning Curves
+2019-03-21 15:18:12,290 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_JNJ = 0.9086909646893819
+2019-03-21 15:18:12,290 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_JNJ = [0.35744444 0.75358067 0.8987486  0.11986838 0.90869096]
+2019-03-21 15:18:12,290 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_JNJ = 0.6076666122851198 +/- 0.6306780766242992
+2019-03-21 15:18:12,290 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0029981136322021484s
+2019-03-21 15:18:12,290 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_MSFT from pickle file
+2019-03-21 15:18:12,321 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.3397165836844
+2019-03-21 15:18:12,321 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_MSFT_Learning Curves
+2019-03-21 15:18:13,324 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_MSFT = 0.8601107199999605
+2019-03-21 15:18:13,324 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_MSFT = [ 0.92045766  0.56492308 -0.28179467  0.05000481  0.86011072]
+2019-03-21 15:18:13,324 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_MSFT = 0.42274032069528145 +/- 0.9357489712399197
+2019-03-21 15:18:13,324 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-03-21 15:18:13,324 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for WIKI_XOM from pickle file
+2019-03-21 15:18:13,424 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.33333333333333
+2019-03-21 15:18:13,424 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_WIKI_XOM_Learning Curves
+2019-03-21 15:18:14,524 - stock_price_prediction - INFO - buildmodels - Training score for WIKI_XOM = 0.6063453582713212
+2019-03-21 15:18:14,524 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for WIKI_XOM = [0.4090367  0.84194246 0.95133792 0.88227942 0.60634536]
+2019-03-21 15:18:14,524 - stock_price_prediction - INFO - buildmodels - Cross validation score for WIKI_XOM = 0.7381883693579204 +/- 0.40267433129825037
+2019-03-21 15:18:14,524 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-03-21 15:18:14,524 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for BCB_7809 from pickle file
+2019-03-21 15:18:14,555 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.35139822241491
+2019-03-21 15:18:14,555 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_BCB_7809_Learning Curves
+2019-03-21 15:18:15,473 - stock_price_prediction - INFO - buildmodels - Training score for BCB_7809 = 0.8693909896283103
+2019-03-21 15:18:15,473 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for BCB_7809 = [0.41637976 0.70816283 0.67113519 0.68988913 0.86939099]
+2019-03-21 15:18:15,473 - stock_price_prediction - INFO - buildmodels - Cross validation score for BCB_7809 = 0.6709915802907467 +/- 0.29110595246435444
+2019-03-21 15:18:15,473 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-03-21 15:18:15,473 - stock_price_prediction - INFO - buildmodels - Loading Linear Regression model for NASDAQOMX_COMP from pickle file
+2019-03-21 15:18:15,495 - stock_price_prediction - DEBUG - buildmodels - Last train_data size = 83.35051546391753
+2019-03-21 15:18:15,495 - stock_price_prediction - INFO - buildmodels - Plotting Linear Regression_NASDAQOMX_COMP_Learning Curves
+2019-03-21 15:18:16,498 - stock_price_prediction - INFO - buildmodels - Training score for NASDAQOMX_COMP = 0.9187555669484297
+2019-03-21 15:18:16,498 - stock_price_prediction - DEBUG - buildmodels - Cross validation scores for NASDAQOMX_COMP = [0.16363237 0.53860363 0.13550395 0.65327415 0.91875557]
+2019-03-21 15:18:16,498 - stock_price_prediction - INFO - buildmodels - Cross validation score for NASDAQOMX_COMP = 0.4819539316588736 +/- 0.5964640350744118
+2019-03-21 15:18:16,498 - stock_price_prediction - DEBUG - buildmodels - Cross validation scoring time = 0.0s
+2019-03-21 15:18:16,498 - stock_price_prediction - INFO - buildmodels - ----------------Building model using Decision Tree Regressor----------------
+2019-03-21 15:18:16,498 - stock_price_prediction - INFO - buildmodels - Loading Decision Tree Regressor model for WIKI_AAPL from pickle file
